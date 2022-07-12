@@ -27,11 +27,15 @@ public class PalCheckerTest {
     //longestPal method tests
     @Test
     @DisplayName ("check Racecar is found as a palindrome in a sentence")
-    public void checkRacecarIsFoundAsPalindromeInSentence() {assertEquals("racecar",longestPal("I'm going to race a racecar"));}
+    public void checkRacecarIsFoundAsPalindromeInSentence() {assertEquals("racecar",longestPal("I'm going to race a Racecar"));}
 
     @Test
     @DisplayName ("check noon is found as a palindrome in a sentence")
     public void checkLongestPalindromeIsFoundInSentence() {assertEquals("noon",longestPal("The meeting was set for noon"));}
+
+    @Test
+    @DisplayName ("check uppercase is ignored")
+    public void checkUpperCaseIsIgnored2() {assertEquals("repaper",longestPal("rEPapEr"));}
 
     @Test
     @DisplayName ("check longest palindrome is found from multiple palindromes")

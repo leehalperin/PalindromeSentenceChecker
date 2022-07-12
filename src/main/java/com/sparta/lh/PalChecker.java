@@ -1,5 +1,6 @@
 package com.sparta.lh;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class PalChecker {
@@ -19,6 +20,7 @@ public class PalChecker {
 
     static String longestPal(String str) {
         str = str + " ";
+        str = str.toLowerCase();
 
         String longestword = "", word = "";
 
