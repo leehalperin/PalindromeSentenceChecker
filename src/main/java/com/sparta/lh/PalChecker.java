@@ -43,10 +43,11 @@ public class PalChecker {
         return longestword;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
+
         Scanner sc = new Scanner (System.in);
         System.out.println("Please enter a sentence to find the longest palindrome: ");
-        String s = new String(sc.nextLine());
+        String s = sc.nextLine();
 
         if (longestPal(s) == "" || longestPal(s).length()<6)
             System.out.println("No Palindrome with 6 or more letters has been found");
